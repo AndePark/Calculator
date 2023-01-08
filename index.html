@@ -6,32 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="javascriptv2.js" defer></script>
+    <!-- <script src="javascript.js" defer></script> -->
 </head>
 <body>
-    <script src="javascript.js" defer>
-    </script>
-  
+    <!-- grid will represent the whole calculator  -->
+    <div class="grid"> 
+        <!-- output represents the display for calculator -->
+        <div class="output">
+            <!-- previous-operand is result of previous operation whereas current-operand is result of current operation  -->
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+         </div>
+         
+        <button data-number>1</button> 
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-number>.</button>
 
-    <div class="numbers">
-        <input type="button" value="1"/>
-        <input type="button" value="2"/>
-        <input type="button" value="3"/>
-        <input type="button" value="4"/>
-        <input type="button" value="5"/>
-        <input type="button" value="6"/>
-        <input type="button" value="7"/>
-        <!-- <button class="num">1</button> 
-        <button class="num">2</button>
-        <button class="num">3</button>
-        <button class="num">4</button>
-        <button class="num">5</button>
-        <button class="num">6</button>
-        <button class="num">7</button>
-        <button class="num">8</button>
-        <button class="num">9</button> -->
+        <button data-operation>+</button>
+        <button data-operation>-</button>
+        <button data-operation>*</button>
+        <button data-operation>÷</button>
+
+        <button data-clear>Clear</button>
+
+        <button data-equal>Equals</button>
+
+        <button data-delete>Delete</button>
+
     </div>
 
-
+<!-- 
     <button id="op">Add</button>
     <button id="op">Subtract</button>
     <button id="op">Multiply</button>
@@ -40,6 +52,6 @@
     <button id="equals">Equals</button>
     <button>Clear</button>
 
-    <p id="answer"></p>
+    <p id="answer"></p> -->
 </body>
 </html>
