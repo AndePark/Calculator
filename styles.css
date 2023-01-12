@@ -1,0 +1,62 @@
+body {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(209, 212, 224), rgb(98, 108, 159));
+    }
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.nums, .ops, .misc, .equ {
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    cursor: pointer;
+    font-size: larger;
+    border: 1px solid beige;
+    background-color: wheat;
+    border-radius: 15px;
+    animation: mymove 5s infinite;
+    flex: 1;
+}
+
+.equ {
+    grid-column: 1 /-1;
+}
+
+@keyframes mymove {
+    25% {border: 5px solid beige;}
+  }
+
+button:hover {
+    background-color: burlywood;
+    transition: 0.3s;
+}
+
+.output {
+    grid-column: 1 /-1;
+    justify-content: center;
+    display: flex;
+    margin: 5px;
+    border-radius: 5px;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    background-color: whitesmoke;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.link {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
