@@ -1,1 +1,1 @@
-hello 
+This is a Calculator App that I made using HTML, CSS and JavaScript. This was my first project built after finishing the foundation stage of theOdinProject. Capabilities include the use of operations (multiplication, division, addition, subtraction), ability to handle multiple operands per calculation, and function buttons such as deletion, clear and equals. 
