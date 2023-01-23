@@ -1,4 +1,5 @@
 //numButtons also includes . 
+// Revised Version of JS
 const numButtons = document.querySelectorAll('[data-number]');
 const opButtons = document.querySelectorAll('[data-operation]');
 const clearButton = document.querySelector('[data-clear]');
